@@ -1,0 +1,8 @@
+{
+  "name": "Italian Seismic Hazard Map ver. 1.0 for netifly",
+  "description": "Interactive map of Italy dividing the region into a 1°x1° grid, calculating daily probabilities of M≥4.0 earthquakes using Poisson and ETAS models with INGV continuous data.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

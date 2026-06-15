@@ -1,0 +1,17 @@
+# netlify.toml - Netlify Configuration
+
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# Proxy requests from /api/earthquakes to our Netlify Serverless Function
+[[redirects]]
+  from = "/api/earthquakes"
+  to = "/.netlify/functions/earthquakes"
+  status = 200
+
+# Support Single Page Application routing (reloads/deep links)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
